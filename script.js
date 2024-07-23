@@ -7,7 +7,7 @@ async function fetchRuneData() {
     }
 
     try {
-        const response = await fetch(`http://localhost:3000/api/runes/${runeId}`);
+        const response = await fetch(`https://runes-backend-mu.vercel.app/api/runes/${runeId}`);
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
