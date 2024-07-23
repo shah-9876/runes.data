@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .input-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            width: 300px;
+        }
+        .input-group button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .input-group button:hover {
+            background-color: #0056b3;
+        }
+        .rune-info {
+            margin: 20px 0;
+        }
+        .rune-info h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .rune-info p {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .rune-info strong {
+            color: #007bff;
+        }
+        .rune-info span {
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .rune-info p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rune Information</h1>
+        <div class="input-group">
+            <input type="text" id="runeIdInput" placeholder="Enter Rune ID">
+            <button onclick="fetchRuneData()">Fetch Data</button>
+        </div>
+        <div id="rune-info" class="rune-info">
+            <h2>Rune Details</h2>
+            <p><strong>Rune ID:</strong> <span id="runeid"></span></p>
+            <p><strong>Rune:</strong> <span id="rune"></span></p>
+            <p><strong>Spaced Rune:</strong> <span id="spacedRune"></span></p>
+            <p><strong>Number:</strong> <span id="number"></span></p>
+            <p><strong>Height:</strong> <span id="height"></span></p>
+            <p><strong>Symbol:</strong> <span id="symbol"></span></p>
+            <p><strong>Premine:</strong> <span id="premine"></span></p>
+            <p><strong>Supply:</strong> <span id="supply"></span></p>
+            <p><strong>Holders:</strong> <span id="holders"></span></p>
+            <p><strong>Burned:</strong> <span id="burned"></span></p>
+            <p><strong>Mints:</strong> <span id="mints"></span></p>
+            <p><strong>Mintable:</strong> <span id="mintable"></span></p>
+            <p><strong>Remaining:</strong> <span id="remaining"></span></p>
+            <p><strong>Divisibility:</strong> <span id="divisibility"></span></p>
+            <p><strong>Start:</strong> <span id="start"></span></p>
+            <p><strong>End:</strong> <span id="end"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
